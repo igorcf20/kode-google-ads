@@ -1,7 +1,7 @@
 # Sintraperi
 
 - **customer_id:** _por preencher_ (10 dígitos, sem hífens)
-- **Site:** https://sintraperi.pt _(confirmar domínio)_ · pré-visualização https://sintrapeript.lovable.app
+- **Site:** https://sintraperi.pt
 - **Repositório do site:** `igorcf20/sintrapeript`
 - **Moeda / zona:** EUR / Portugal
 
