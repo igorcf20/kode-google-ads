@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "google-ads": {
+      "type": "stdio",
+      "command": "bash",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/scripts/google-ads-mcp.sh"]
+    }
+  }
+}

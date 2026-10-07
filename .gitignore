@@ -1,0 +1,4 @@
+.env
+*.local
+adc.json
+.DS_Store

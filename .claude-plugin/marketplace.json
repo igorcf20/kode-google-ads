@@ -1,0 +1,14 @@
+{
+  "name": "google-ads-toolkit",
+  "description": "Ferramentas Claude Code para gerir Google Ads dos nossos clientes.",
+  "owner": {
+    "name": "igorcf20"
+  },
+  "plugins": [
+    {
+      "name": "google-ads",
+      "source": "./",
+      "description": "Gestão e análise de contas Google Ads com o servidor MCP oficial e skills."
+    }
+  ]
+}
