@@ -1,7 +1,0 @@
-{
-  "name": "google-ads",
-  "version": "0.1.0",
-  "description": "Gestão e análise de contas Google Ads (Sintraperi, Kodemi) com o servidor MCP oficial google-ads-mcp e as skills de google/skills.",
-  "author": { "name": "igorcf20" },
-  "license": "Apache-2.0"
-}

@@ -1,10 +1,18 @@
 {
   "extraKnownMarketplaces": {
     "kode-google-ads": {
-      "source": { "source": "github", "repo": "igorcf20/kode-google-ads" }
+      "source": {
+        "source": "github",
+        "repo": "igorcf20/kode-google-ads"
+      }
     }
   },
   "enabledPlugins": {
-    "google-ads@kode-google-ads": true
+    "google-ads@kode-google-ads": true,
+    "google-ads-dev@kode-google-ads": true,
+    "google-analytics@kode-google-ads": true,
+    "google-cloud@kode-google-ads": true,
+    "google-developers@kode-google-ads": true,
+    "google-identity@kode-google-ads": true
   }
 }

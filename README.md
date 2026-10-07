@@ -1,54 +1,72 @@
 # kode-google-ads
 
-Plugin do Claude Code para gerir e analisar as contas Google Ads dos nossos clientes
+Plugins do Claude Code para gerir e analisar as contas Google Ads dos nossos clientes
 (**Sintraperi** e **Kodemi**). Usa o
 [servidor MCP oficial do Google Ads](https://github.com/googleads/google-ads-mcp)
 e as skills de Google Ads de [google/skills](https://github.com/google/skills).
 
-## Conteúdo
+## Plugins
 
-| Caminho | O quê |
-|---|---|
-| `skills/gestao-google-ads/` | Skill principal: regras de análise, GAQL úteis e um perfil por cliente em `clientes/`. |
-| `skills/google-ads-api-quickstart/` | (Google) Obter developer token, OAuth e refresh token. |
-| `skills/google-ads-api-mcp-setup/` | (Google) Instalar/configurar o servidor MCP. |
-| `skills/google-ads-api-account-diagnostics/` | (Google) Diagnosticar quedas de conversões/leads e parcela de impressões. |
-| `.mcp.json` + `scripts/google-ads-mcp.sh` | Servidor MCP `google-ads` (versão fixada, via `uvx` ou `pipx`). |
-| `.claude-plugin/` | Manifestos do plugin e do marketplace. |
+O repositório é um marketplace do Claude Code com 6 plugins. As skills oficiais da
+Google (todas as de [google/skills](https://github.com/google/skills)) estão
+divididas por área, para se ativar só o que for preciso.
 
-As skills da Google são cópias de `google/skills@8a1ac05` (Apache-2.0,
-`skills/LICENSE-google-skills`).
+| Plugin | Skills | Custo fixo por sessão* | Conteúdo |
+|---|---|---|---|
+| `google-ads` | 4 | ~0,8k tokens | Gestão das contas (skill `gestao-google-ads` + perfis em `clientes/`), skills Google Ads API e servidor MCP `google-ads`. |
+| `google-ads-dev` | 11 | ~1,7k | Google Mobile Ads SDK, IMA SDK/DAI, Data Manager API (públicos e conversões offline). |
+| `google-analytics` | 2 | ~0,4k | APIs Admin e Data do GA4. |
+| `google-cloud` | 131 | **~24k** | GKE, Cloud Run, BigQuery, Cloud SQL/AlloyDB/Spanner, IAM, Logging/Monitoring, Gemini/Agent Platform, SecOps, arquitetura. |
+| `google-developers` | 2 | ~0,4k | Encontrar skills Google; consultar documentação oficial. |
+| `google-identity` | 1 | ~0,2k | DPoP. |
 
-> O servidor MCP é **só de leitura** (`customers_list_accessible_customers`,
+\* Descrições das skills carregadas em todas as sessões com o plugin ativo; o conteúdo
+completo de cada skill só é lido quando é usada. O `google-cloud` é pesado: desativar
+quando não for preciso (`/plugin` → desativar, ou `false` em `.claude/settings.json`).
+
+Estrutura: `plugins/<plugin>/skills/<skill>/SKILL.md`. As skills da Google são cópias
+de `google/skills` no commit em `GOOGLE_SKILLS_COMMIT` (Apache-2.0,
+`plugins/*/skills/LICENSE-google-skills`).
+
+> O servidor MCP do Google Ads é **só de leitura** (`customers_list_accessible_customers`,
 > `metadata_get_resource_metadata`, `search_search`). O Claude analisa e recomenda; as
 > alterações fazem-se na interface do Google Ads.
+
+## Atualizar as skills da Google
+
+```bash
+scripts/sync-google-skills.sh        # último main de google/skills
+git add -A && git commit -m "chore: sync google/skills"
+```
+
+As skills da Google são substituídas pelas versões novas; `gestao-google-ads` e os
+perfis de clientes não são tocados. Skills novas entram no plugin da sua área (Ads de
+gestão de contas `google-ads-api-*` → `google-ads`; restantes de Ads → `google-ads-dev`).
 
 ## Instalação
 
 ### Opção A — abrir este repositório no Claude Code (inclui claude.ai/code)
 
-O `.claude/settings.json` regista o marketplace e ativa o plugin: ao abrir uma sessão
-neste repositório, o Claude Code propõe instalá-lo. Aceitar e aprovar o servidor
-`google-ads`.
+O `.claude/settings.json` regista o marketplace e ativa os 6 plugins: ao abrir uma
+sessão neste repositório, o Claude Code propõe instalá-los. Aceitar e aprovar o
+servidor `google-ads`.
 
 ### Opção B — disponível em qualquer projeto (Claude Code local)
 
 ```
 /plugin marketplace add igorcf20/kode-google-ads
 /plugin install google-ads@kode-google-ads
-```
-
-ou no terminal:
-
-```bash
-claude plugin marketplace add igorcf20/kode-google-ads
-claude plugin install google-ads@kode-google-ads
+/plugin install google-analytics@kode-google-ads
+/plugin install google-ads-dev@kode-google-ads
+/plugin install google-cloud@kode-google-ads
+/plugin install google-developers@kode-google-ads
+/plugin install google-identity@kode-google-ads
 ```
 
 Como o repositório é privado, o `git` local tem de ter acesso a ele (ex.: `gh auth login`).
 Atualizar: `claude plugin marketplace update kode-google-ads`.
 
-Requisitos: Python 3.12+ e [`uv`](https://docs.astral.sh/uv/) (ou `pipx`).
+Requisitos do servidor MCP: Python 3.12+ e [`uv`](https://docs.astral.sh/uv/) (ou `pipx`).
 
 ## Credenciais
 
@@ -95,7 +113,7 @@ Onde definir:
 
 > "Lista as contas Google Ads a que tenho acesso."
 
-Copiar os IDs para `skills/gestao-google-ads/clientes/sintraperi.md` e `kodemi.md`.
+Copiar os IDs para `plugins/google-ads/skills/gestao-google-ads/clientes/sintraperi.md` e `kodemi.md`.
 
 ## Exemplos
 
@@ -106,5 +124,5 @@ Copiar os IDs para `skills/gestao-google-ads/clientes/sintraperi.md` e `kodemi.m
 
 ## Novo cliente
 
-Copiar `skills/gestao-google-ads/clientes/_modelo.md`, preencher e acrescentar à tabela
-em `skills/gestao-google-ads/SKILL.md`.
+Copiar `plugins/google-ads/skills/gestao-google-ads/clientes/_modelo.md`, preencher e
+acrescentar à tabela em `plugins/google-ads/skills/gestao-google-ads/SKILL.md`.

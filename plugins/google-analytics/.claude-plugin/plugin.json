@@ -1,0 +1,9 @@
+{
+  "name": "google-analytics",
+  "version": "0.1.0",
+  "description": "Skills Google para as APIs Admin e Data do Google Analytics 4.",
+  "author": {
+    "name": "igorcf20"
+  },
+  "license": "Apache-2.0"
+}

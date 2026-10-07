@@ -1,0 +1,9 @@
+{
+  "name": "google-developers",
+  "version": "0.1.0",
+  "description": "Skills Google para encontrar skills e consultar documentação oficial de developers Google.",
+  "author": {
+    "name": "igorcf20"
+  },
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "google-ads-dev",
+  "version": "0.1.0",
+  "description": "Skills Google para desenvolvimento de publicidade: Google Mobile Ads SDK, IMA SDK/DAI e Data Manager API (públicos e conversões).",
+  "author": {
+    "name": "igorcf20"
+  },
+  "license": "Apache-2.0"
+}

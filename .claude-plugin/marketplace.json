@@ -1,14 +1,39 @@
 {
   "name": "kode-google-ads",
-  "description": "Ferramentas Claude Code para gerir Google Ads dos nossos clientes.",
+  "description": "Plugins Claude Code da Kode: gestão Google Ads e todas as skills oficiais de google/skills, por área.",
   "owner": {
     "name": "igorcf20"
   },
   "plugins": [
     {
       "name": "google-ads",
-      "source": "./",
-      "description": "Gestão e análise de contas Google Ads com o servidor MCP oficial e skills."
+      "source": "./plugins/google-ads",
+      "description": "Gestão e análise de contas Google Ads (Sintraperi, Kodemi) com o servidor MCP oficial google-ads-mcp e as skills Google Ads API."
+    },
+    {
+      "name": "google-ads-dev",
+      "source": "./plugins/google-ads-dev",
+      "description": "Skills Google para desenvolvimento de publicidade: Google Mobile Ads SDK, IMA SDK/DAI e Data Manager API (públicos e conversões)."
+    },
+    {
+      "name": "google-analytics",
+      "source": "./plugins/google-analytics",
+      "description": "Skills Google para as APIs Admin e Data do Google Analytics 4."
+    },
+    {
+      "name": "google-cloud",
+      "source": "./plugins/google-cloud",
+      "description": "Skills Google para Google Cloud: GKE, Cloud Run, BigQuery, bases de dados, IAM, observabilidade, Gemini/Agent Platform, segurança e arquitetura."
+    },
+    {
+      "name": "google-developers",
+      "source": "./plugins/google-developers",
+      "description": "Skills Google para encontrar skills e consultar documentação oficial de developers Google."
+    },
+    {
+      "name": "google-identity",
+      "source": "./plugins/google-identity",
+      "description": "Skills Google de identidade (adoção de DPoP)."
     }
   ]
 }

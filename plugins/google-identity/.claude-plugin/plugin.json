@@ -1,0 +1,9 @@
+{
+  "name": "google-identity",
+  "version": "0.1.0",
+  "description": "Skills Google de identidade (adoção de DPoP).",
+  "author": {
+    "name": "igorcf20"
+  },
+  "license": "Apache-2.0"
+}

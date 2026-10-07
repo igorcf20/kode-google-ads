@@ -1,0 +1,9 @@
+{
+  "name": "google-cloud",
+  "version": "0.1.0",
+  "description": "Skills Google para Google Cloud: GKE, Cloud Run, BigQuery, bases de dados, IAM, observabilidade, Gemini/Agent Platform, segurança e arquitetura.",
+  "author": {
+    "name": "igorcf20"
+  },
+  "license": "Apache-2.0"
+}
