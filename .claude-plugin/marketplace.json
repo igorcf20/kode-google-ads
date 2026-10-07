@@ -21,9 +21,14 @@
       "description": "Skills Google para as APIs Admin e Data do Google Analytics 4."
     },
     {
+      "name": "google-cloud-essencial",
+      "source": "./plugins/google-cloud-essencial",
+      "description": "Skills Google Cloud essenciais para a nossa atividade: projeto e credenciais, gcloud, IAM, custos, BigQuery (GA4/Google Ads), Gemini, Cloud Run, Firebase e Cloud Storage."
+    },
+    {
       "name": "google-cloud",
       "source": "./plugins/google-cloud",
-      "description": "Skills Google para Google Cloud: GKE, Cloud Run, BigQuery, bases de dados, IAM, observabilidade, Gemini/Agent Platform, segurança e arquitetura."
+      "description": "Restantes skills Google Cloud (GKE, bases de dados, observabilidade, Agent Platform, SecOps, arquitetura). Desativado por omissão."
     },
     {
       "name": "google-developers",

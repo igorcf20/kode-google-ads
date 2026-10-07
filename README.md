@@ -7,7 +7,7 @@ e as skills de Google Ads de [google/skills](https://github.com/google/skills).
 
 ## Plugins
 
-O repositório é um marketplace do Claude Code com 6 plugins. As skills oficiais da
+O repositório é um marketplace do Claude Code com 7 plugins. As skills oficiais da
 Google (todas as de [google/skills](https://github.com/google/skills)) estão
 divididas por área, para se ativar só o que for preciso.
 
@@ -16,13 +16,18 @@ divididas por área, para se ativar só o que for preciso.
 | `google-ads` | 4 | ~0,8k tokens | Gestão das contas (skill `gestao-google-ads` + perfis em `clientes/`), skills Google Ads API e servidor MCP `google-ads`. |
 | `google-ads-dev` | 11 | ~1,7k | Google Mobile Ads SDK, IMA SDK/DAI, Data Manager API (públicos e conversões offline). |
 | `google-analytics` | 2 | ~0,4k | APIs Admin e Data do GA4. |
-| `google-cloud` | 131 | **~24k** | GKE, Cloud Run, BigQuery, Cloud SQL/AlloyDB/Spanner, IAM, Logging/Monitoring, Gemini/Agent Platform, SecOps, arquitetura. |
+| `google-cloud-essencial` | 11 | ~2k | Projeto e credenciais (onboarding, auth, `gcloud`, IAM), custos, BigQuery (exportações GA4/Google Ads, previsões), Gemini, Cloud Run, Firebase, Cloud Storage. |
+| `google-cloud` ⏸ | 120 | ~22,5k | Restantes skills Google Cloud: GKE, AlloyDB/Cloud SQL/Spanner/Bigtable, Logging/Monitoring, Agent Platform, Genkit, SecOps, Filestore, Airflow, arquitetura. **Desativado.** |
 | `google-developers` | 2 | ~0,4k | Encontrar skills Google; consultar documentação oficial. |
 | `google-identity` | 1 | ~0,2k | DPoP. |
 
 \* Descrições das skills carregadas em todas as sessões com o plugin ativo; o conteúdo
-completo de cada skill só é lido quando é usada. O `google-cloud` é pesado: desativar
-quando não for preciso (`/plugin` → desativar, ou `false` em `.claude/settings.json`).
+completo de cada skill só é lido quando é usada.
+
+⏸ `google-cloud` está desativado por ser pesado e pouco relevante para a nossa
+atividade. Para o usar: `/plugin` → ativar, ou `true` em `.claude/settings.json`. A
+lista das skills essenciais está em `CLOUD_ESSENCIAL` no `scripts/sync-google-skills.sh`
+(mover uma skill = editar a lista e correr o script).
 
 Estrutura: `plugins/<plugin>/skills/<skill>/SKILL.md`. As skills da Google são cópias
 de `google/skills` no commit em `GOOGLE_SKILLS_COMMIT` (Apache-2.0,
@@ -47,7 +52,7 @@ gestão de contas `google-ads-api-*` → `google-ads`; restantes de Ads → `goo
 
 ### Opção A — abrir este repositório no Claude Code (inclui claude.ai/code)
 
-O `.claude/settings.json` regista o marketplace e ativa os 6 plugins: ao abrir uma
+O `.claude/settings.json` regista o marketplace e ativa os plugins (exceto `google-cloud`): ao abrir uma
 sessão neste repositório, o Claude Code propõe instalá-los. Aceitar e aprovar o
 servidor `google-ads`.
 
@@ -58,7 +63,7 @@ servidor `google-ads`.
 /plugin install google-ads@kode-google-ads
 /plugin install google-analytics@kode-google-ads
 /plugin install google-ads-dev@kode-google-ads
-/plugin install google-cloud@kode-google-ads
+/plugin install google-cloud-essencial@kode-google-ads
 /plugin install google-developers@kode-google-ads
 /plugin install google-identity@kode-google-ads
 ```

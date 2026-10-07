@@ -11,7 +11,8 @@
     "google-ads@kode-google-ads": true,
     "google-ads-dev@kode-google-ads": true,
     "google-analytics@kode-google-ads": true,
-    "google-cloud@kode-google-ads": true,
+    "google-cloud-essencial@kode-google-ads": true,
+    "google-cloud@kode-google-ads": false,
     "google-developers@kode-google-ads": true,
     "google-identity@kode-google-ads": true
   }

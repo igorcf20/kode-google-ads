@@ -1,0 +1,9 @@
+{
+  "name": "google-cloud-essencial",
+  "version": "0.1.0",
+  "description": "Skills Google Cloud essenciais para a nossa atividade: projeto e credenciais, gcloud, IAM, custos, BigQuery (GA4/Google Ads), Gemini, Cloud Run, Firebase e Cloud Storage.",
+  "author": {
+    "name": "igorcf20"
+  },
+  "license": "Apache-2.0"
+}
