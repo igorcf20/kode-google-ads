@@ -20,6 +20,8 @@ CLOUD_ESSENCIAL=(
   google-cloud-recipe-auth        # OAuth/ADC (credenciais Google Ads API)
   gcloud
   iam-helper-for-troubleshooting  # erros de permissão
+  iam-helper-for-policy-management  # quem acede ao projeto
+  google-cloud-waf-security       # revisão de segurança (ex.: Cloud Run)
   google-cloud-waf-cost-optimization
   bigquery-basics                 # exportações GA4 / Google Ads Data Transfer
   bigquery-ai-ml                  # previsões e segmentação sobre esses dados

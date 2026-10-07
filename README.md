@@ -16,8 +16,8 @@ divididas por área, para se ativar só o que for preciso.
 | `google-ads` | 4 | ~0,8k tokens | Gestão das contas (skill `gestao-google-ads` + perfis em `clientes/`), skills Google Ads API e servidor MCP `google-ads`. |
 | `google-ads-dev` | 11 | ~1,7k | Google Mobile Ads SDK, IMA SDK/DAI, Data Manager API (públicos e conversões offline). |
 | `google-analytics` | 2 | ~0,4k | APIs Admin e Data do GA4. |
-| `google-cloud-essencial` | 11 | ~2k | Projeto e credenciais (onboarding, auth, `gcloud`, IAM), custos, BigQuery (exportações GA4/Google Ads, previsões), Gemini, Cloud Run, Firebase, Cloud Storage. |
-| `google-cloud` ⏸ | 120 | ~22,5k | Restantes skills Google Cloud: GKE, AlloyDB/Cloud SQL/Spanner/Bigtable, Logging/Monitoring, Agent Platform, Genkit, SecOps, Filestore, Airflow, arquitetura. **Desativado.** |
+| `google-cloud-essencial` | 13 | ~2,4k | Projeto e credenciais (onboarding, auth, `gcloud`, IAM: erros e gestão de acessos), revisão de segurança, custos, BigQuery (exportações GA4/Google Ads, previsões), Gemini, Cloud Run, Firebase, Cloud Storage. |
+| `google-cloud` ⏸ | 118 | ~22k | Restantes skills Google Cloud: GKE, AlloyDB/Cloud SQL/Spanner/Bigtable, Logging/Monitoring, Agent Platform, Genkit, SecOps, Filestore, Airflow, arquitetura. **Desativado.** |
 | `google-developers` | 2 | ~0,4k | Encontrar skills Google; consultar documentação oficial. |
 | `google-identity` | 1 | ~0,2k | DPoP. |
 

@@ -23,7 +23,7 @@
     {
       "name": "google-cloud-essencial",
       "source": "./plugins/google-cloud-essencial",
-      "description": "Skills Google Cloud essenciais para a nossa atividade: projeto e credenciais, gcloud, IAM, custos, BigQuery (GA4/Google Ads), Gemini, Cloud Run, Firebase e Cloud Storage."
+      "description": "Skills Google Cloud essenciais para a nossa atividade: projeto e credenciais, gcloud, IAM (erros e gestão de acessos), segurança, custos, BigQuery (GA4/Google Ads), Gemini, Cloud Run, Firebase e Cloud Storage."
     },
     {
       "name": "google-cloud",
