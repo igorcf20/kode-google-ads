@@ -1,10 +1,10 @@
 {
   "extraKnownMarketplaces": {
-    "google-ads-toolkit": {
-      "source": { "source": "github", "repo": "igorcf20/google-ads-toolkit" }
+    "kode-google-ads": {
+      "source": { "source": "github", "repo": "igorcf20/kode-google-ads" }
     }
   },
   "enabledPlugins": {
-    "google-ads@google-ads-toolkit": true
+    "google-ads@kode-google-ads": true
   }
 }

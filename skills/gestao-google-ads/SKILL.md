@@ -30,7 +30,7 @@ de qualquer consulta.**
 - `search_search` (`customer_id` só dígitos, `query` GAQL).
 
 Se as ferramentas não existirem na sessão: ver o README do repositório
-`google-ads-toolkit` (variáveis de ambiente em falta ou servidor não aprovado).
+`kode-google-ads` (variáveis de ambiente em falta ou servidor não aprovado).
 Não inventar números.
 
 ## 3. Regras

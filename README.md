@@ -1,4 +1,4 @@
-# google-ads-toolkit
+# kode-google-ads
 
 Plugin do Claude Code para gerir e analisar as contas Google Ads dos nossos clientes
 (**Sintraperi** e **Kodemi**). Usa o
@@ -34,19 +34,19 @@ neste repositório, o Claude Code propõe instalá-lo. Aceitar e aprovar o servi
 ### Opção B — disponível em qualquer projeto (Claude Code local)
 
 ```
-/plugin marketplace add igorcf20/google-ads-toolkit
-/plugin install google-ads@google-ads-toolkit
+/plugin marketplace add igorcf20/kode-google-ads
+/plugin install google-ads@kode-google-ads
 ```
 
 ou no terminal:
 
 ```bash
-claude plugin marketplace add igorcf20/google-ads-toolkit
-claude plugin install google-ads@google-ads-toolkit
+claude plugin marketplace add igorcf20/kode-google-ads
+claude plugin install google-ads@kode-google-ads
 ```
 
 Como o repositório é privado, o `git` local tem de ter acesso a ele (ex.: `gh auth login`).
-Atualizar: `claude plugin marketplace update google-ads-toolkit`.
+Atualizar: `claude plugin marketplace update kode-google-ads`.
 
 Requisitos: Python 3.12+ e [`uv`](https://docs.astral.sh/uv/) (ou `pipx`).
 
