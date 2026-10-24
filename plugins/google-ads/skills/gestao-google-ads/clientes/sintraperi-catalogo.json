@@ -1,0 +1,267 @@
+{
+  "gerado_de": "sintrapeript",
+  "dominio": "https://sintraperi.pt",
+  "servicos": [
+    {
+      "slug": "detecao-de-fugas",
+      "servico": "Deteção de Fugas de Água",
+      "url": "https://sintraperi.pt/detecao-de-fugas",
+      "meta_title": "Deteção de Fugas de Água sem Obras em Sintra e Lisboa | Sintraperi",
+      "meta_description": "Localizamos fugas de água com métodos não destrutivos em Sintra, Lisboa e Grande Lisboa. Sem partir paredes ou pavimentos.",
+      "subtitulo": "Localização técnica de fugas em apartamentos, vivendas e condomínios com métodos não destrutivos.",
+      "sinais": [
+        "Aumento inexplicável na fatura da água",
+        "Manchas, bolor ou humidade em paredes e tetos",
+        "Pavimentos húmidos ou rodapés a descolar",
+        "Contador a girar sem consumo aparente",
+        "Perda de pressão em pontos de água",
+        "Ruído de água em tubagens paradas"
+      ],
+      "beneficios": [
+        "Sem obras exploratórias",
+        "Redução de custos",
+        "Relatório técnico",
+        "Diagnóstico rápido"
+      ],
+      "equipamento": [
+        "Termografia por infravermelhos",
+        "Geofone eletrónico",
+        "Gás traçador",
+        "Vídeo inspeção"
+      ],
+      "faq": [
+        "Quanto tempo demora uma deteção de fugas?",
+        "Precisam de partir paredes?",
+        "Fazem relatório para a seguradora?",
+        "Atendem em Lisboa e Grande Lisboa?"
+      ],
+      "imagens": [
+        "src/assets/services/detecao-de-fugas.webp"
+      ]
+    },
+    {
+      "slug": "infiltracoes-e-humidades",
+      "servico": "Infiltrações e Humidades",
+      "url": "https://sintraperi.pt/infiltracoes-e-humidades",
+      "meta_title": "Diagnóstico de Infiltrações e Humidades | Sintraperi",
+      "meta_description": "Avaliação técnica de infiltrações em paredes, tetos e fachadas e diagnóstico de humidades em Sintra, Lisboa e Grande Lisboa.",
+      "subtitulo": "Identificamos a origem real das infiltrações e humidades, distinguindo condensação, fuga e infiltração de outras causas.",
+      "sinais": [
+        "Manchas em paredes, tetos ou junto a janelas",
+        "Bolor recorrente em zonas húmidas",
+        "Infiltração com origem em apartamento superior",
+        "Humidade persistente após reparações",
+        "Tinta e reboco a destacarem-se",
+        "Cheiro persistente a humidade"
+      ],
+      "beneficios": [
+        "Diagnóstico da origem",
+        "Sem assumir obras",
+        "Apoio a condomínios",
+        "Documentação probatória"
+      ],
+      "equipamento": [
+        "Termografia por infravermelhos",
+        "Medidor de humidade",
+        "Higrómetro ambiental",
+        "Drone (quando necessário)"
+      ],
+      "faq": [
+        "Podem determinar de onde vem a infiltração?",
+        "Fazem obras de reparação?",
+        "Servem para processos com o condomínio?",
+        "O relatório é aceite pelas seguradoras?"
+      ],
+      "imagens": [
+        "src/assets/services/infiltracoes-e-humidades.webp"
+      ]
+    },
+    {
+      "slug": "peritagem-para-seguradoras",
+      "servico": "Peritagem para Seguradoras",
+      "url": "https://sintraperi.pt/peritagem-para-seguradoras",
+      "meta_title": "Peritagem Técnica e Relatórios para Seguradoras | Sintraperi",
+      "meta_description": "Relatórios técnicos para seguradoras em casos de danos por água, fugas e infiltrações. Atendimento em Sintra, Lisboa e Grande Lisboa.",
+      "subtitulo": "Elaboramos relatórios técnicos detalhados para processos de sinistro junto de seguradoras.",
+      "sinais": [
+        "Pedido formal da seguradora para relatório técnico",
+        "Necessidade de prova técnica em sinistro",
+        "Origem do dano por confirmar",
+        "Diferença de versões entre as partes",
+        "Recusa ou atraso na abertura de processo",
+        "Reincidência do sinistro no mesmo local"
+      ],
+      "beneficios": [
+        "Aceite pelas seguradoras",
+        "Valor probatório",
+        "Diagnóstico independente",
+        "Redução de conflitos"
+      ],
+      "equipamento": [
+        "Registo fotográfico detalhado",
+        "Termografia",
+        "Medição de humidade",
+        "Vídeo inspeção"
+      ],
+      "faq": [
+        "O relatório é aceite pela minha seguradora?",
+        "Preciso de já ter processo aberto?",
+        "Quanto tempo demora a entrega do relatório?",
+        "Vão ao local da ocorrência?"
+      ],
+      "imagens": [
+        "src/assets/services/peritagem-para-seguradoras.webp"
+      ]
+    },
+    {
+      "slug": "inspecao-de-tubagens",
+      "servico": "Inspeção de Tubagens",
+      "url": "https://sintraperi.pt/inspecao-de-tubagens",
+      "meta_title": "Inspeção Vídeo de Tubagens e Esgotos | Sintraperi",
+      "meta_description": "Inspeção interna de tubagens e esgotos com câmara. Identificação de obstruções, fissuras, ruturas e fugas sem partir nada.",
+      "subtitulo": "Inspeção interna por vídeo de tubagens e esgotos para identificar obstruções, fissuras e ruturas.",
+      "sinais": [
+        "Esgoto lento ou entupimentos frequentes",
+        "Mau cheiro junto a casas de banho ou cozinhas",
+        "Retorno de água",
+        "Suspeita de rutura ou abatimento",
+        "Manchas de humidade em pisos inferiores",
+        "Ruídos anormais nas tubagens"
+      ],
+      "beneficios": [
+        "Sem demolições preventivas",
+        "Localização exata",
+        "Prova visual",
+        "Apoio a compras/vendas"
+      ],
+      "equipamento": [
+        "Câmara endoscópica de tubagens",
+        "Localizador de sonda",
+        "Iluminação LED integrada",
+        "Gravação digital"
+      ],
+      "faq": [
+        "Que diâmetros conseguem inspecionar?",
+        "Precisam de partir alguma coisa?",
+        "Localizam o ponto exato à superfície?",
+        "Podem inspecionar antes da compra de um imóvel?"
+      ],
+      "imagens": [
+        "src/assets/services/inspecao-de-tubagens.webp"
+      ]
+    },
+    {
+      "slug": "inspecao-com-drone",
+      "servico": "Inspeção com Drone",
+      "url": "https://sintraperi.pt/inspecao-com-drone",
+      "meta_title": "Inspeção de Fachadas e Coberturas com Drone | Sintraperi",
+      "meta_description": "Inspeção técnica de fachadas, coberturas e zonas de difícil acesso com apoio de drone. Apoio a condomínios e empresas.",
+      "subtitulo": "Apoio aéreo na inspeção de fachadas, coberturas e zonas de difícil acesso.",
+      "sinais": [
+        "Infiltrações em pisos superiores ou últimas frações",
+        "Fissuras visíveis em fachadas",
+        "Caleiras e algerozes danificados",
+        "Edifícios altos sem acesso direto",
+        "Telhas partidas ou deslocadas",
+        "Necessidade de peritagem prévia a obras em altura"
+      ],
+      "beneficios": [
+        "Redução de custos",
+        "Segurança",
+        "Cobertura total",
+        "Registo fotográfico"
+      ],
+      "equipamento": [
+        "Drone DJI MINI 5 PRO",
+        "Câmara de alta resolução",
+        "Voo planeado",
+        "Piloto certificado"
+      ],
+      "faq": [
+        "Precisam de autorização para voar?",
+        "Voam em condomínios?",
+        "Fazem inspeção térmica com drone?",
+        "Entregam as imagens ao cliente?"
+      ],
+      "imagens": [
+        "src/assets/services/inspecao-com-drone.webp"
+      ]
+    },
+    {
+      "slug": "inspecao-termografica-com-drone",
+      "servico": "Inspeção Termográfica com Drone",
+      "url": "https://sintraperi.pt/inspecao-termografica-com-drone",
+      "meta_title": "Inspeção Termográfica com Drone em Fachadas e Painéis Solares | Sintraperi",
+      "meta_description": "Inspeção termográfica com drone para fachadas de edifícios e painéis solares em Lisboa, Sintra e Grande Lisboa, com registo visual e relatório técnico.",
+      "subtitulo": "Mapeamento térmico aéreo de fachadas e instalações fotovoltaicas para localizar anomalias com rapidez, segurança e registo técnico.",
+      "sinais": [
+        "Fissuras, infiltrações ou zonas húmidas em fachadas altas",
+        "Suspeita de falhas de isolamento ou pontes térmicas",
+        "Painéis solares com produção abaixo do esperado",
+        "Hotspots ou módulos fotovoltaicos com aquecimento anormal",
+        "Necessidade de avaliar grandes superfícies sem andaimes",
+        "Levantamento técnico antes de manutenção ou reabilitação"
+      ],
+      "beneficios": [
+        "Cobertura eficiente",
+        "Menor exposição em altura",
+        "Anomalias localizadas",
+        "Relatório documentado"
+      ],
+      "equipamento": [
+        "Drone com câmara termográfica radiométrica",
+        "Câmara visual de alta resolução",
+        "Planeamento de voo e grelha de captura",
+        "Software de análise termográfica"
+      ],
+      "faq": [
+        "O que pode ser detetado numa fachada?",
+        "Que problemas podem aparecer nos painéis solares?",
+        "A inspeção pode ser feita em qualquer dia?",
+        "É entregue um relatório técnico?"
+      ],
+      "imagens": [
+        "src/assets/services/drone-termografico-fachada.jpg",
+        "src/assets/services/drone-termografico-paineis-solares.jpg",
+        "src/assets/services/termografia-fachada-edificio.jpg"
+      ]
+    },
+    {
+      "slug": "detecao-de-fugas-com-gas-tracador",
+      "servico": "Deteção de Fugas com Gás Traçador",
+      "url": "https://sintraperi.pt/detecao-de-fugas-com-gas-tracador",
+      "meta_title": "Deteção de Fugas com Gás Traçador | Sintraperi",
+      "meta_description": "Localização não destrutiva de fugas ocultas com gás traçador em tubagens de água e circuitos fechados, em Sintra, Lisboa e Grande Lisboa.",
+      "subtitulo": "Localizamos fugas muito pequenas ou silenciosas em tubagens ocultas, sem abrir paredes ou pavimentos à procura do problema.",
+      "sinais": [
+        "Perda de pressão sem sinais visíveis de água",
+        "Fuga suspeita sob pavimentos, betonilhas ou paredes",
+        "Contador a registar consumo com todas as torneiras fechadas",
+        "Circuitos onde a deteção acústica não deu uma resposta conclusiva",
+        "Tubagens com pequenos pontos de perda ou microfugas",
+        "Necessidade de confirmar a localização antes de uma reparação"
+      ],
+      "beneficios": [
+        "Elevada sensibilidade",
+        "Pesquisa não destrutiva",
+        "Aplicação versátil",
+        "Evidência documentada"
+      ],
+      "equipamento": [
+        "Mistura certificada 95/5",
+        "Detetor seletivo de hidrogénio",
+        "Manómetro e regulador",
+        "Equipamentos complementares"
+      ],
+      "faq": [
+        "O que é o gás traçador?",
+        "O método é seguro?",
+        "É preciso partir paredes ou pavimentos?",
+        "Entregam relatório técnico?"
+      ],
+      "imagens": [
+        "src/assets/services/gas-tracador.jpg"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "cliente": "sintraperi",
+  "customer_id": "",
+  "dominios_permitidos": ["sintraperi.pt"],
+  "orcamento_diario_max_eur_por_campanha": null,
+  "orcamento_mensal_max_eur_conta": null,
+  "cpc_max_eur": 5.0,
+  "aplicar_sem_aprovacao": [
+    "add_negative_keywords",
+    "add_keywords",
+    "create_rsa",
+    "set_status:ad_group_criterion",
+    "set_status:ad_group_ad"
+  ],
+  "notas": "Orçamentos ficam bloqueados enquanto os limites estiverem a null. Criar, pausar ou remover campanhas e grupos pede sempre aprovação."
+}

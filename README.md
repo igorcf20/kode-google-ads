@@ -33,9 +33,20 @@ Estrutura: `plugins/<plugin>/skills/<skill>/SKILL.md`. As skills da Google são 
 de `google/skills` no commit em `GOOGLE_SKILLS_COMMIT` (Apache-2.0,
 `plugins/*/skills/LICENSE-google-skills`).
 
-> O servidor MCP do Google Ads é **só de leitura** (`customers_list_accessible_customers`,
-> `metadata_get_resource_metadata`, `search_search`). O Claude analisa e recomenda; as
-> alterações fazem-se na interface do Google Ads.
+### Gestão com alterações
+
+- **Ler**: servidor MCP oficial `google-ads` (só leitura).
+- **Alterar**: `plugins/google-ads/scripts/ads-write.sh` — palavras-chave, negativas,
+  anúncios RSA, pausar/ativar, orçamentos. Valida sempre na API antes de aplicar.
+- **Limites por cliente**: `clientes/<cliente>-limites.json` — o que o Claude aplica
+  sozinho, CPC máximo, domínios permitidos e teto de orçamento (orçamentos ficam
+  bloqueados enquanto o teto for `null`). Criar/pausar campanhas pede sempre aprovação.
+- **Catálogo por cliente**: `clientes/<cliente>-catalogo.json`, gerado do site
+  (`scripts/catalogo-do-site.mjs`): serviços, páginas, sintomas, fotos.
+- **Registo**: cada alteração fica em `clientes/alteracoes/<cliente>.jsonl`.
+
+O developer token tem de ter acesso **Explorer** ou **Basic** (o nível *Test* não altera
+contas reais). Requisitos: `uv` e, para o catálogo, Node.js e o repositório do site.
 
 ## Atualizar as skills da Google
 
